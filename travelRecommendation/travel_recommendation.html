@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelBloom</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="./travel_recommendation.html" class="nav-brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-plane-departure"></i>
+      </div>
+      <span class="brand-name">TravelBloom</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="./travel_recommendation.html" class="active">Home</a></li>
+      <li><a href="./about_us.html">About Us</a></li>
+      <li><a href="./contact_us.html">Contact Us</a></li>
+    </ul>
+
+    <div class="search-container">
+      <input type="text" id="searchInput" class="search-input" placeholder="Enter a destination or keyword">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <button id="btnSearch" class="btn-search" type="button">Search</button>
+      <button id="btnClear" class="btn-clear" type="button">Clear</button>
+    </div>
+  </nav>
+
+  <aside class="social-sidebar">
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  </aside>
+
+  <main class="main-content">
+    <section class="hero-section">
+      <h1 class="hero-title">EXPLORE DREAM DESTINATION</h1>
+      <p class="hero-description">
+        The Travel Recommendation App helps users explore popular travel destinations through an interactive and user-friendly interface. It allows users to search for beaches, temples, countries, or specific country names to view related cities along with images and descriptions. The app dynamically fetches data from a structured JSON file to display relevant results. It provides a simple and efficient way to discover and plan travel destinations.
+      </p>
+      <button class="btn-book" type="button">Book Now</button>
+    </section>
+
+    <section class="results-section">
+      <div id="resultsContainer" class="results-grid"></div>
+    </section>
+  </main>
+
+  <script src="./travel_recommendation.js"></script>
+</body>
+</html>
