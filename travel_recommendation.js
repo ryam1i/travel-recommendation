@@ -197,3 +197,10 @@ if (searchInput) {
 }
 
 fetchTravelData();
+
+const urlParams = new URLSearchParams(window.location.search);
+const initialSearch = urlParams.get('search');
+if (initialSearch && searchInput) {
+  searchInput.value = initialSearch;
+  searchRecommendations();
+}
